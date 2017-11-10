@@ -2,10 +2,12 @@
   "name": "Workshop1",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://DevelopersRising.github.io/Workshop112017_1",
   "devDependencies": {
     "react-scripts": "1.0.17"
   },
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "react": "^16.1.0",
     "react-dom": "^16.1.0"
   },
@@ -13,6 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   }
 }
